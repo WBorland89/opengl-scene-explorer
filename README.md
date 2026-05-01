@@ -1,2 +1,2 @@
-# blackscholes-montecarlo-engine
-High-performance hybrid options pricing engine built in C++ with a real-time C# Blazor dashboard. Implements fast Black-Scholes analytical pricing, parallel Monte Carlo simulations, complete Greeks calculation, and volatility surface handling. Features live price streaming, scenario analysis, and stress testing via SignalR.
+# opengl-scene-explorer
+Cross-platform 3D scene renderer built with C++ and modern OpenGL. Features real-time lighting, camera controls, and object manipulation. Includes a clean HTML + Tailwind CSS frontend, C# ASP.NET Core REST API, and PostgreSQL for saving scenes. Deployed on AWS S3 + CloudFront.
