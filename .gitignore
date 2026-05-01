@@ -1,3 +1,55 @@
+# =============================================
+# Build & CMake
+# =============================================
+build/
+Build/
+out/
+bin/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakePresets.json.user
+compile_commands.json
+CMakeUserPresets.json
+install_manifest.txt
+Makefile
+*.dir/
+
+# =============================================
+# IDE & Editor
+# =============================================
+# CLion / IntelliJ
+.idea/
+cmake-build-*/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
+# =============================================
+# Dependencies & Package Managers
+# =============================================
+# vcpkg
+vcpkg_installed/
+vcpkg/
+
+# Conan
+.conan/
+conanfile.txt
+conanfile.lock
+
+# =============================================
+# C++ Specific
+# =============================================
 # Prerequisites
 *.d
 
@@ -13,57 +65,63 @@
 
 # Linker files
 *.ilk
-
-# Debugger Files
 *.pdb
 
-# Compiled Dynamic libraries
+# Compiled libraries
 *.so
 *.dylib
 *.dll
 *.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
 *.lib
+*.lai
+*.la
 
 # Executables
 *.exe
 *.out
 *.app
 
-# Build directories
-build/
-Build/
-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
-
-# Temporary files
+# Debug / Temporary
 *.tmp
 *.log
 *.bak
 *.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
 *.dwo
 
-# test output & cache
-Testing/
-.cache/
+# =============================================
+# Project Specific
+# =============================================
+# Renderer outputs
+cpp-renderer/assets/cache/
+cpp-renderer/build-*/
+
+# Backend
+backend/bin/
+backend/obj/
+backend/*.db
+backend/*.log
+
+# Frontend
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+
+# Docker
+docker/volumes/
+
+# =============================================
+# OS Generated
+# =============================================
+.DS_Store
+Thumbs.db
+*.DS_Store
+**/.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Temporary folders
+tmp/
+temp/
