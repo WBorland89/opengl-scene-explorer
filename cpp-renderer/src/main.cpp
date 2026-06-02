@@ -53,7 +53,7 @@ int main()
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 430");
 
-    glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 
     while (!glfwWindowShouldClose(window))
     {
