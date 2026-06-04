@@ -12,7 +12,7 @@
 class generator
 {
 private:
-    int numVertices, numIndices, precision, inner, outer;
+    int numVertices{}, numIndices{}, precision, inner, outer{};
     std::vector<glm::vec3> vertices, normals, sTangents, tTangents;
     std::vector<glm::vec2> texCoords;
     std::vector<int> indices;
@@ -20,8 +20,8 @@ private:
     float toRadians(float degrees);
 
 public:
-    Generator();
-    Generator(float inner, float outer, int precisionIn, std::vector<glm::vec3> point);
+    generator();
+    generator(float inner, float outer, int precisionIn, std::vector<glm::vec3> point);
     int getNumVertices();
     int getNumIndices();
     std::vector<int> getIndices();

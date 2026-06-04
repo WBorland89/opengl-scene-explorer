@@ -38,6 +38,7 @@ endif()
 # ====================== GLAD ======================
 add_library(glad STATIC
         ${CMAKE_CURRENT_SOURCE_DIR}/third_party/glad/src/glad.c
+        src/generator.cpp
 )
 target_include_directories(glad PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/third_party/glad/include
@@ -60,6 +61,7 @@ add_library(imgui STATIC
         ${imgui_SOURCE_DIR}/imgui_demo.cpp
         ${imgui_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
         ${imgui_SOURCE_DIR}/backends/imgui_impl_opengl3.cpp
+        src/generator.cpp
 )
 
 target_include_directories(imgui PUBLIC
@@ -78,7 +80,8 @@ if(NOT SOURCES)
     message(FATAL_ERROR "No source files found in src/ folder! Create at least one .cpp file.")
 endif()
 
-add_executable(opengl-scene-explorer ${SOURCES})
+add_executable(opengl-scene-explorer ${SOURCES}
+        src/generator.cpp)
 
 target_include_directories(opengl-scene-explorer PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/include
